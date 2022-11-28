@@ -13,10 +13,12 @@ flake8 = "*"
 flake8-docstrings = "*"
 types-requests = "*"
 types-pyyaml = "*"
-langchain = {editable = true, file = "file:///Users/hansenq/Documents/CS/langchain"}
 playwright = "*"
 manifest-ml = "*"
 jupyter = "*"
+langchain = {editable = true, file = "file:///Users/hansenq/Documents/CS/langchain"}
+openai = "*"
+google-search-results = "*"
 
 [dev-packages]
 

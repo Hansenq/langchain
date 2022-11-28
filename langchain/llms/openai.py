@@ -115,7 +115,12 @@ class OpenAI(LLM, BaseModel):
 
                 response = openai("Tell me a joke.")
         """
+        print("======================================================")
+        print(prompt)
+        print("------------------------------------------------------")
         response = self.client.create(
             model=self.model_name, prompt=prompt, stop=stop, **self._default_params
         )
+        print(response["choices"][0]["text"])
+        print("======================================================")
         return response["choices"][0]["text"]
